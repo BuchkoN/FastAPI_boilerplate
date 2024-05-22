@@ -8,6 +8,8 @@ services:
       context: ..
       dockerfile: ./docker/Dockerfile
     container_name: web_app
+    ports:
+      - 8000:8000
     volumes:
       - ..:/app/
     env_file:
